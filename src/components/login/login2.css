@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;                
+    justify-content: center;      
+    align-items: center;          
+    width: 100vw;                
+    height: 100vh;                
+}
+
+.main {
+    display: flex;
+    position: relative;
+    width: 300px;                
+    height: 200px;   
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);         
+            
+}
+
+.everythink{
+    transform: scale(3);
+    transform-origin: center ;
+   }
+
+.first-child{
+    background: linear-gradient(180deg, rgba(124,184,238,1) 1%, rgba(227,142,211,1) 26%, rgba(224,96,124,1) 59%, rgba(209,90,83,1) 73%, rgba(227,142,211,1) 99%);
+    width: 100%;
+    height: 100%;
+
+}
+
+.second-child{
+
+
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 71%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    }
+
+
+.logo{
+    
+   height: 30px;
+   width: 70px;
+}
+
+.d-shape{
+  top: 50%; 
+  left: 0; 
+  transform: translateY(40%) translateX(-80%);
+  width: 175px;
+  height: 130px;
+  z-index: 9999;
+}
+
+.h2{
+    color: rgb(96, 14, 14);
+    transform: translateY(-750%) translatex(250%);
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 1px;
+}
+
+
+
+ .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    text-align: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 5px 2px;
+    padding-left: 40px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 5px;
+    border-color: #DE3021;
+    width: 120px;
+    height: 9px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;    
+    transform: translateY(100%);
+} 
+
+.btn:hover{
+
+ background-color: #DE3021;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #f67266,
+                        0 0 25px #f67266,
+                        0 0 50px #f67266,
+                        0 0 100px #f67266;
+                    }
+
+.hr{
+    border-top: 0.2px solid #DE3021;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 120px;
+    background-color: white;
+    transform: translateY(600%);
+
+
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs #t1 {
+    border: 1 solid ;
+    border-color: #DE3021;
+    border-radius: 5px;
+    width: 80px;
+    margin-bottom: 2px;
+    font-size: 6px;
+    padding-left: 10px;
+    height: 15px;
+
+
+}
+#tx1 {
+    font-size: 8px;
+    transform: translateX(30%) translateY(50%);
+    background-color: white;
+    width: 20px;
+}
+#tx2 {
+    font-size: 8px;
+    transform: translateX(15%) translateY(50%);
+    background-color: white;
+    width: 33px;
+}
+
+.inputs #t2 {
+    border: 1 solid;
+    border-color: #DE3021;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 6px;
+    padding-left: 10px;
+    height: 15px;
+
+}
+#fp{
+    font-size: 4px;
+    transform: translateX(70%) translateY(-100%);
+}
+
+.login{
+    color: white;
+    background-color: #DE3021;
+    border: none;
+    border-radius: 20px;
+    width: 70px;
+    font-size: 6px;
+    height: 15px;
+    transform: translate(-30% , 50%);
+    cursor: pointer;
+}
+
+.login:hover{
+    background-color: #DE3021;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f67266,
+                0 0 25px #f67266,
+                0 0 50px #f67266,
+                0 0 100px #f67266;
+}
+
+.tx3{
+    font-size: 5px;
+    transform: translate(-30% , 60%);
+
+}
+
+.or{
+    font-size: 6px;
+    background-color: white;
+    transform: translateY(80%);
+    width: 12px;
+    color: #DE3021;
+}
+
+
+
+@media (max-width: 450px) {
+    .main {
+      width: 150px; 
+      height: 200px; 
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+  
+    .d-shape {
+      display: none; 
+    }
+
+    .first-child{
+        width: .1px;
+        height: .1px;
+        position: relative;
+        background-color: white;
+        
+    }
+  
+  
+    .second-child {
+     background-color: transparent;
+     position: relative;
+    }
+  
+    .logo {
+        position: absolute;
+      height: 15px;
+      width: 37px; 
+      transform: translateY(-20px);
+      z-index: 9999;
+      margin-top: 10px;
+      margin-left: 10px;
+      background-color: transparent;
+    
+    }
+    .h2 {
+        position: absolute; 
+        top: 0; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        color: white;
+        font-size: 8px;
+        font-family: sans-serif;
+        font-weight: 100;
+        margin: 10px 0;
+        z-index: 5; 
+    }
+
+    .inputs{
+        padding-top: 20px;
+    }
+  
+    .button-container {
+      gap: 3px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      
+      background: linear-gradient(180deg, rgba(124, 184, 238, 1) 1%, rgba(227, 142, 211, 1) 26%, rgba(224, 96, 124, 1) 59%, rgba(209, 90, 83, 1) 73%, rgba(227, 142, 211, 1) 99%);
+        height: 200px;
+      padding-top: 30px;  
+        width: 150px;
+    }
+  
+    .btn {
+      padding: 4px 2px;
+      width: 75px; 
+      height: 5px;
+      font-size: 3px; 
+      padding-left: 20px;
+    }
+  
+    .hr {
+      transform: translateY(150%); 
+      background-color:transparent ;
+      padding-top: 20px ;
+      width: 70px;
+     
+    }
+  
+    .inputs #t1, .inputs #t2 {
+      width: 70px; 
+      height: 12px; 
+      font-size: 5px;
+    }
+  
+    #tx1, #tx2 {
+      font-size: 7px;
+      width: 15px;
+      background-color: transparent;
+      transform: translate(40%); 
+    }
+  
+    .login {
+      width: 60px;
+      height: 12px; 
+      font-size: 5px;
+      left: 50%;
+      transform: translateX(2%); 
+
+    }
+  
+    .tx3 {
+      font-size: 4px;
+      left: 50%;
+      transform: translateX(2%); 
+    }
+  
+    .or {
+        margin-top: 0px;
+        transform: translateY(10%);
+      font-size: 7px;
+      width: 10px; 
+      background-color: transparent;
+    }
+  }

@@ -1,0 +1,422 @@
+#root {
+  width: 100%;
+  margin-left: 800px;
+  /* padding: 2rem; */
+  text-align: center;
+}
+.form-label{
+  margin-right: 1300px;
+  font-weight: bold;
+  width: 180px;
+}
+/* .form-control{
+  display: block;
+  width: 500px;
+  border-radius: 50px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400; 
+} */
+ /* .previous{
+  margin-right: 800px;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  width: 120px;
+ }
+ .next{
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  width: 120px;
+
+ } */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.my-custom-table{
+  margin-top: -100px;
+  width: 900px;
+}
+.my-custom-table thead th {
+  background-color: #dc3545;
+  --bs-table-color: white;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+Global Styles
+body {
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  position: relative;
+}
+
+nav .logo img {
+  width: 100px; /* Adjust as needed */
+}
+
+.first-bts {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Replaces margin-left for spacing */
+}
+
+.first-bts a {
+  text-decoration: none;
+  background-color: #DE3021;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.first-bts .signup {
+  background-color: white;
+  border: 2px solid #DE3021;
+  color: #DE3021;
+  font-weight: 500;
+}
+
+.first-bts .postanad {
+  width: 100px; /* Adjust as needed */
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-bar {
+  border-radius: 22px;
+  width: 320px;
+  height: 43px;
+  border: 2px solid #DE3021;
+  padding-left: 10px;
+}
+
+.search-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #DE3021;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.search-icon {
+  position: absolute;
+  right: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+/* SecondaryNav Styles */
+.sec-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DE3021;
+  padding: 10px 150px;
+  margin-left: -150px;
+  margin-right: -150px;
+  margin-top: 10px;
+}
+
+.second-bts {
+  display: flex;
+  gap: 110px; /* Replaces margin-right for spacing */
+}
+
+.second-bts a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+}
+
+/* MainContent Styles */
+.main-image {
+  width: 100%;
+  height: auto;
+  margin-left: -150px;
+  margin-right: -150px;
+}
+
+.third-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.third-section-image {
+  width: 15px;
+  height: 90px;
+  margin-right: 10px;
+}
+
+.paragraphs-section h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.paragraphs-section p {
+  font-size: 14px;
+  color: #666;
+}
+
+.filtrage {
+  background-color: #DE3021;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.filtrage p {
+  color: white;
+  font-size: 14px;
+}
+
+.filtrage select {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  padding: 5px;
+  width: 100px;
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+}
+
+.cards-part {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card1 {
+  background-color: black;
+  width: 260px;
+  height: 360px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card1 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.t-shirt {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.location-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.price-shopping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.shopping-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 150px;
+  margin-left: -150px;
+  margin-right: -150px;
+  margin-top: 50px;
+}
+
+.more-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-sec,
+.second-sec,
+.third-sec {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.first-sec h3,
+.second-sec h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.first-sec p,
+.second-sec p {
+  font-size: 12px;
+  color: rgb(109, 109, 109);
+  margin: 5px 0;
+}
+
+.acc-post {
+  display: flex;
+  gap: 10px;
+}
+
+.banners {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.google-banner,
+.app-store {
+  width: 150px;
+  height: auto;
+}
+
+.under-banners {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.trustpilot {
+  width: 130px;
+  height: auto;
+}
+
+.rights {
+  font-size: 12px;
+  color: rgb(208, 208, 208);
+  margin-top: 20px;
+}
+
+
+/* Card Styles */
+.card1 {
+  background-color: black;
+  width: 260px;
+  height: 360px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px; /* Add margin for spacing between cards */
+}
+
+.card1 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.t-shirt {
+  font-size: 16px;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Location Icon and Text */
+.location {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.location-icon {
+  width: 12px; /* Smaller size for location icon */
+  height: 12px; /* Smaller size for location icon */
+}
+
+/* Price and Shopping Icon */
+.price-shopping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.shopping-icon {
+  width: 20px; /* Smaller size for shopping icon */
+  height: 20px; /* Smaller size for shopping icon */
+  cursor: pointer;
+}

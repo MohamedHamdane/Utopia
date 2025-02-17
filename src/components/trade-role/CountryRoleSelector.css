@@ -1,0 +1,164 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .country-role-wrapper {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Left Section with Gradient Background */
+  .country-role-left-section {
+    width: 500px;
+    flex: 40%; /* Take up 40% of the width */
+    background: rgb(63, 94, 251);
+    background: linear-gradient(
+      125deg,
+      rgba(94, 121, 255, 0.862) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
+    position: relative;
+    overflow: visible; /* Allow the image to overflow */
+  }
+  
+  /* Logo Image */
+  .country-role-logo {
+    position: absolute;
+    top: 20px; /* Adjust the top position */
+    left: 20px; /* Adjust the left position */
+    z-index: 4; /* Ensure the logo is above other elements */
+  }
+  
+  .country-role-logo img {
+    width: 200px; /* Adjust the logo size */
+    height: auto;
+  }
+  
+  /* Image placed outside the container */
+  .country-role-image {
+    position: absolute;
+    bottom: 0; /* Align the image to the bottom */
+    left: 0;
+    width: 120%; /* Make the image larger than its container */
+    height: auto;
+    z-index: 2; /* Ensure the image is above the form */
+    display: flex;
+    align-items: flex-end; /* Align the image to the bottom */
+    justify-content: flex-start;
+  }
+  
+  .country-role-image img {
+    width: 100%; /* Ensure the image scales properly */
+    height: auto;
+    transform: translate(0%, -10%); /* Slightly overlap the form */
+    z-index: 3; /* Ensure the image is above the form */
+    scale: 1.1;
+  }
+  
+  /* Right Section with Country and Role Selection */
+  .country-role-right-section {
+    flex: 60%; /* Take up 60% of the width */
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Ensure the form is below the image */
+    margin-left: 30px;
+  }
+  
+  .country-role-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: white; /* Ensure the form background is white */
+    padding: 20px;
+    border-radius: 12px;
+    z-index: 1; /* Ensure the form is above the image */
+  }
+  
+  .country-role-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Form Group Styling */
+  .country-role-form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .country-role-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .country-role-form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #8b0000; /* Dark red outline */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .country-role-form-group select:focus {
+    border-color: #ff0000; /* Brighter red on focus */
+    box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  /* Radio Group Styling */
+  .country-role-radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    z-index: 1000;
+  }
+  
+  .country-role-radio-group label {
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .country-role-radio-group input[type='radio'] {
+    margin-right: 8px;
+  }
+  
+  /* Submit Button Styling */
+  .country-role-submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff0000; /* Red background */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .country-role-submit-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+  }
