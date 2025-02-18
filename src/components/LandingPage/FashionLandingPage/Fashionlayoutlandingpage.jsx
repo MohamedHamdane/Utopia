@@ -1,8 +1,8 @@
 // import * as React from "react";
-import { Navbar } from "./Fashion_admin";
-import { SecondaryNav } from "./Fashion_admin";
-import { MainContent } from "./Fashion_admin";
-import { Footer } from "./Fashion_admin";
+import { Navbar } from "./Fashionlandingpage";
+import { SecondaryNav } from "./Fashionlandingpage";
+import { MainContent } from "./Fashionlandingpage";
+import { Footer } from "./Fashionlandingpage";
 
 
 export default function FashionLayout() {

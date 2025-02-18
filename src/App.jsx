@@ -5,7 +5,7 @@ import  ProductForm  from "./components/AddProduct/productForm/ProductForm";
 import  ProductUpload  from "./components/ProductPhotos/productUpload/ProductUpload";
 import { SellerForm } from './components/SellerInfo/sellerForm/SellerForm';
 import ProductTable from "./components/ProductDetails/productList/ProductList";
-import FashionLayout from './components/LandingPage/FashionLayout';
+import LandingPage from './components/LandingPage/Fashion';
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import './componenets/login/login.css';
 // import Login from './componenets/login/login';
@@ -19,9 +19,9 @@ import FashionLayout_guest from './components/LandingPage guest/fashionlayout_gu
 import CountryRoleSelector from './components/trade-role/CountryRoleSelector';
 import AdminForm from './components/admin/AdminForm';
 import GoogleForm from './components/login/GoogleForm';
-
+import FashionLayout from './components/LandingPage/FashionLandingPage/Fashionlayoutlandingpage';
 import LoginForm from './components/login/LoginForm';
-import Fashion_admin from './components/AddProduct/productForm/ProductForm'
+import Fashion_admin from './components/AddProduct/productForm/ProductForm';
 
 // import FashionLayout from './components/LandingPage/fashion/FashionLayout';
 
@@ -57,18 +57,15 @@ const App = () => {
     <Route path="/login" element={<LoginForm/>}></Route>
 
 
-    <Route path="/logged-in" element={<FashionLayout/>}></Route>
+    <Route path="/logged-in" element={<LandingPage/>}></Route>
     
 
 
-
-
-      
-       <Route path="/ProductForm" element={<ProductForm />} />  
+    <Route path="/add-product" element={<ProductForm />} />
        <Route path="/ProductUpload" element={<ProductUpload />} /> 
         <Route path="/SellerForm" element={<SellerForm />} /> 
-      <Route path="/ProductTable" element={<ProductTable />} />
-      {/* <Route path="/FashionLayout" element={<FashionLayout  />} /> */}
+        <Route path="/my-products" element={<ProductTable />} />
+      <Route path="/FashionLayout" element={<FashionLayout  />} />
       {/* <Route path="/trade" element={<TradeRole/>}></Route> */}
       {/* <Route path="/admin" element={<Admin/>} ></Route> */}
       {/* <Route path="/user" element={<User/>}></Route> */}
